@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  
+</head>
+<style>
+    body{
+        background-color: wheat;
+        font-family: roboto;
+    }
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-info {
+  flex: 1;
+  background-color: rgba(0, 204, 204, 0.814);;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.options {
+  flex: 1;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+}
+
+.options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.options li:hover {
+  background-color: #f0f0f0;
+}
+
+.blank {
+  flex: 1;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-info">
+        <h1>User's Profile</h1>
+        <p>Name: David</p>
+        <p>Email: david@example.com</p>
+        <!-- Add more account information as needed -->
+      </div>
+      <div class="options">
+        <h2>Account Settings</h2>
+        <ul>
+          <li>Profile</li>
+          <li>Password</li>
+          <li>Security</li>
+          <!-- Add more options as needed -->
+        </ul>
+      </div>
+    </div>
+    <div class="blank"></div>
+  </div>
+</body>
+</html>

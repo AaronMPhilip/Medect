@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: -2%;
+  margin-bottom: 10%;
+  background-color: whitesmoke;
+ 
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:wheat;
+  border: solid 3px black; 
+}
+
+header {
+  text-align: center; /* Center align the header */
+
+  background-color:rgba(0, 204, 204, 0.814);
+  margin-left: -2.5%;
+  margin-right: -2.5%;
+  color: black;
+  padding: 50px;
+  border: solid 3px black;
+}
+
+.inbox {
+  display: flex;
+  margin-bottom: 20%;
+}
+
+.message-list {
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+
+.message-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.message-content {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.message-content .message {
+  display: none; /* Hide message content by default */
+}
+
+/* Show message content if there are messages */
+.message-list li.no-messages + .message-content .message {
+  display: block;
+}
+
+/* Style for "No messages" message */
+.message-list li.no-messages {
+  font-style: italic;
+  color: #777;
+}
+
+.message-content .message h2 {
+  margin-bottom: 10px;
+}
+
+.message-content .message p {
+  margin: 0;
+}
+
+</style>
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat Box</h1>
+    </header>
+    <div class="inbox">
+      <div class="message-list">
+        <ul>
+          <!-- Check if there are no messages -->
+          <li class="no-messages">No Messages </li>
+        </ul>
+      </div>
+      <div class="message-content">
+        <!-- Show message content or "No messages" message based on the condition -->
+        <div class="message">
+          <h2>Sender</h2>
+          <p>Message content...</p>
+        </div>
+        <!-- Add more message content divs as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
